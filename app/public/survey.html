@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Friend Finder</title>
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+
+</head>
+<body>
+
+  
+
+      <div class="col-lg-12">
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title"><strong>About You</strong></h3>
+          </div>
+          <div class="panel-body">
+            <form method="POST" role="form">
+
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name">
+              </div>
+                
+<h3> Question1</h3>
+
+<h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+<select data-placeholder class= "chosen-select" id="question1">
+  <option value="0"></option>
+  <option value="1">1(strongly disagree)</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5(strongly agree)</option>
+</select>
+
+                
+<h3> Question2</h3>
+
+<h4>Generally speaking, you rely more on your experience than your imagination.</h4>
+<select data-placeholder class= "chosen-select" id="question2">
+  <option value="0"></option>
+  <option value="1">1(strongly disagree)</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5(strongly agree)</option>
+</select>
+
+                
+<h3> Question3</h3>
+
+<h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
+<select data-placeholder class= "chosen-select" id="question3">
+  <option value="0"></option>
+  <option value="1">1(strongly disagree)</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5(strongly agree)</option>
+</select>
+
+                
+<h3> Question4</h3>
+
+<h4>You rarely do something just out of sheer curiosity.</h4>
+<select data-placeholder class= "chosen-select" id="question4">
+  <option value="0"></option>
+  <option value="1">1(strongly disagree)</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5(strongly agree)</option>
+</select>
+
+                
+<h3> Question5</h3>
+
+<h4>People can rarely upset you.</h4>
+<select data-placeholder class= "chosen-select" id="question5">
+  <option value="0"></option>
+  <option value="1">1(strongly disagree)</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5(strongly agree)</option>
+</select>
+
+                
+<h3> Question6</h3>
+
+<h4>It is often difficult for you to relate to other people’s feelings.</h4>
+<select data-placeholder class= "chosen-select" id="question6">
+  <option value="0"></option>
+  <option value="1">1(strongly disagree)</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5(strongly agree)</option>
+</select>
+
+                
+<h3> Question7</h3>
+
+<h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
+<select data-placeholder class= "chosen-select" id="question7">
+  <option value="0"></option>
+  <option value="1">1(strongly disagree)</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5(strongly agree)</option>
+</select>
+
+                
+<h3> Question8</h3>
+
+<h4>You rarely get carried away by fantasies and ideas.</h4>
+<select data-placeholder class= "chosen-select" id="question8">
+  <option value="0"></option>
+  <option value="1">1(strongly disagree)</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5(strongly agree)</option>
+</select>
+
+<h3> Question9</h3>
+
+<h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
+<select data-placeholder class= "chosen-select" id="question9">
+  <option value="0"></option>
+  <option value="1">1(strongly disagree)</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5(strongly agree)</option>
+</select>
+
+<h3> Question10</h3>
+
+<h4>You feel more energetic after spending time with a group of people.</h4>
+<select data-placeholder class= "chosen-select" id="question10">
+  <option value="0"></option>
+  <option value="1">1(strongly disagree)</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5(strongly agree)</option>
+</select>
+
+
+            </form>
+            <br>
+            <div class="text-left">
+              <button type="submit" class="btn btn-primary btn-md" id="submit"><span class="glyphicon glyphicon-fire"></span> Submit</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+    <script src="https://code.jquery.com/jquery.js"></script>
+   <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+
+ 
+
+    // Capture the form inputs 
+    $("#submit").on("click", function(){
+
+   
+  
+      // Create an object for the user's data
+        var userData = {
+          name: $("#name").val(),
+          scores: [$("#question1").val(), $("#question2").val(), $("#question3").val(), $("#question4").val(), $("#question5").val(), $("#question6").val(), $("#question7").val(), $("#question8").val(), $("#question9").val(), $("#question10").val(), ]
+        }
+
+         console.log("userData",userData)
+        // Grab the URL of the website
+        var currentURL = window.location.origin;
+
+        // AJAX post the data to the friends API. 
+        $.post(currentURL + "/api/friends", userData, function(data){
+         console.log("are we sending data", data)
+          // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+          $("#matchName").text(data.name);
+          $('#matchImg').attr("src", data.photo);
+
+          // Show the modal with the best match 
+          $("#resultsModal").modal('toggle');
+
+        });
+    });
+
+
+  </script>
+   </body>
+</html>
