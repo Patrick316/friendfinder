@@ -3,10 +3,6 @@ var friendData = require('../data/friends.js');
 var path = require('path');
 
 
-
-
-
-
 module.exports = function(app){
 
 
@@ -27,11 +23,6 @@ module.exports = function(app){
 				chosenMatch = storedUserObject;
 			}
 		});
-
-
-
-		// Note the code here. Our "server" will respond to requests and let users know if they have a table or not.
-		// It will do this by sending out the value "true" have a table 
 		res.json(chosenMatch);
 		friendData.push(req.body);
 
@@ -48,14 +39,10 @@ module.exports = function(app){
 */
 	});
 
-	// ---------------------------------------------------------------------------
-	// I added this below code so you could clear out the table while working with the functionality.
-	// Don't worry about it!
-
 	app.post('/api/clear', function(req, res){
 		// Empty out the arrays of data
 		friendData = [];
 
 		console.log(friendData);
 	})
-}
+}3
