@@ -29,25 +29,18 @@ res.json(friends)
 
 //sends data back to the front end with matching logic
 app.get("/results", function(req, res) {
+
+totalDifference = 0;
+
+
 if(userInput.length === 0){
 
   console.log("no user input")
 }else{
   console.log("hey",userInput[0].scores)
    Object.keys(friends).forEach(function(index,value){
-
-
-   console.log("hey index", friends[index].scores)
-
-
-
-
-
+      totalDifference = 0;
    })
-
-
-
-
 
 }
 

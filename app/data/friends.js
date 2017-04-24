@@ -6,7 +6,7 @@
 
 var friends = [
   {
-    name: "Ahmed",
+    name: "Redder",
        scores: [
       "5",
       "1",
@@ -21,7 +21,7 @@ var friends = [
     ]
   },
   {
-    name: "Jacob Deming",
+    name: "Stacey Subject",
     scores: [
       "4",
       "2",
@@ -36,7 +36,7 @@ var friends = [
     ]
   },
   {
-    name: "Jeremiah Scanlon",
+    name: "Frank REDD",
       scores: [
       "5",
       "2",
@@ -51,7 +51,7 @@ var friends = [
     ]
   },
   {
-    name: "Louis T. Delia",
+    name: "Amy Winehouse",
       scores: [
       "3",
       "3",
@@ -66,7 +66,7 @@ var friends = [
     ]
   },
   {
-    name: "Lou Ritter",
+    name: "Louis Ljay",
     scores: [
       "4",
       "3",
@@ -81,7 +81,7 @@ var friends = [
     ]
   },
   {
-    name: "Jordan Biason",
+    name: "Flagrant ",
     scores: [
       "4",
       "4",
