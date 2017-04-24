@@ -2,11 +2,12 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var path = require("path");
-var friends = require("./app/data/friends.js")["friendData"]
+var friends = require("./app/data/friends.js")
 
 var app = express();
 var PORT = 3000;
 
+var userInput = [];
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -25,11 +26,38 @@ app.get("/api/friends", function(req, res) {
 res.json(friends)
 });
 
-// gabs data from front end 
 
+//sends data back to the front end with matching logic
+app.get("/results", function(req, res) {
+if(userInput.length === 0){
+
+  console.log("no user input")
+}else{
+  console.log("hey",userInput[0].scores)
+   Object.keys(friends).forEach(function(index,value){
+
+
+   console.log("hey index", friends[index].scores)
+
+
+
+
+
+   })
+
+
+
+
+
+}
+
+});
+
+// grabs data from front end 
 app.post("/api/friends", function(req, res) {
 console.log("hello req", req.body)
 
+userInput.push(req.body)
 });
 
 app.listen(PORT, function() {
